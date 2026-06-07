@@ -264,19 +264,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
   <script>
-    VANTA.CLOUDS2({
-      el: "#vanta-bg",
-       mouseControls: true,
-       touchControls: true,
-       gyroControls: false,
-       minHeight: 200.00,
-       minWidth: 200.00,
-       scale: 1.00,
-       skyColor: 0x3895c5,
-       cloudColor: 0x7c7cfc,
-       speed: 3.00,
-      texturePath: "https://www.vantajs.com/gallery/noise.png"
-    });
+   VANTA.CLOUDS2({
+  el: "#vanta-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  skyColor: 0x0a1628,        // deep dark navy — strong contrast base
+  cloudColor: 0xaab8ff,      // cool lavender-white — pops against dark sky
+  cloudShadowColor: 0x1a0050, // deep violet shadow — gives clouds 3D depth
+  lightColor: 0xe8eeff,      // near-white light — crisp highlights on cloud tops
+  speed: 1.20,               // slower = more dramatic, less cartoon-y
+  texturePath: "https://www.vantajs.com/gallery/noise.png"
+});
   </script>
 
 </body>
